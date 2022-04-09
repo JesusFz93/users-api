@@ -1,0 +1,28 @@
+@api = http://localhost:4001/api/roles
+@id = 623f9f609cc33e5c18b5010c
+
+
+### get all Roles
+{{api}}
+
+### get Role
+{{api}}/{{id}}
+
+#### create Role
+POST {{api}}
+Content-Type: application/json
+
+{
+    "name": "USER"
+}
+
+### update Role
+PUT {{api}}/{{id}}
+Content-Type: application/json
+
+{
+    "name": "IFE"
+}
+
+### delete Role 
+DELETE {{api}}/{{id}}

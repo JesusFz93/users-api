@@ -1,0 +1,32 @@
+@api = http://localhost:4001/api/users
+@id = 623a08a8914486e4ff6288ad
+
+### get all Users
+{{api}}
+
+### get User
+{{api}}/{{id}}
+
+#### create User
+POST {{api}}
+Content-Type: application/json
+
+{
+    "rolesId": [ "6239fae6fec6932563daeef8"],
+    "firstName": "Lizandro",
+    "lastName": "Tejeda",
+    "email": "ltejeda@gmail.com",
+    "userName": "LTEJEDA",
+    "password": "123456"
+}
+
+### update User
+PUT {{api}}/{{id}}
+Content-Type: application/json
+
+{
+    "password": "123456"
+}
+
+### delete User 
+DELETE {{api}}/{{id}}

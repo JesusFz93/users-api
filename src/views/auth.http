@@ -1,0 +1,14 @@
+@api = http://localhost:4001/api/auth
+
+### sign in
+POST {{api}}/login
+Content-Type: application/json
+
+{
+    "userName": "wwqwqe",
+    "password": "123456"
+}
+
+### renovar token
+{{api}}/login
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyM2EwOGE4OTE0NDg2ZTRmZjYyODhhZCIsImlhdCI6MTY0ODA2MDExMCwiZXhwIjoxNjQ4MDc0NTEwfQ.Jkls0odtfJIalEHPu_8ngKnDBs5QNVvZAhJiNJuLilA
