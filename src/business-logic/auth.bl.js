@@ -21,7 +21,6 @@ const getUserAuth_BL = async (searchCriteria, value) => {
       contra: result.password,
       active: result.active,
       image: result.image,
-      createdAt: result.createdAt,
     };
   }
 

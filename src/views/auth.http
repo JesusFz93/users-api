@@ -5,10 +5,10 @@ POST {{api}}/login
 Content-Type: application/json
 
 {
-    "userName": "wwqwqe",
-    "password": "123456"
+    "userName": "JFERNANDEZ",
+    "password": "909090"
 }
 
 ### renovar token
 {{api}}/login
-x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyM2EwOGE4OTE0NDg2ZTRmZjYyODhhZCIsImlhdCI6MTY0ODA2MDExMCwiZXhwIjoxNjQ4MDc0NTEwfQ.Jkls0odtfJIalEHPu_8ngKnDBs5QNVvZAhJiNJuLilA
+x-token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyNTE5NDQxYjNlMzBjMjJlNWJmYzRkMiIsImlhdCI6MTY0OTUxNDAxMiwiZXhwIjoxNjQ5NTI4NDEyfQ.yH6qk0uab1IzXE1C4_RNzIQfa4udjiiVFcqCCVg_wVM

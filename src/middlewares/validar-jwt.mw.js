@@ -1,7 +1,7 @@
 const { response, request } = require("express");
 const jwt = require("jsonwebtoken");
 
-const { getUserByUserNameOrIdAuth_BL } = require("../business-logic/users.bl");
+const { getUser_BL } = require("../business-logic/users.bl");
 
 const validarJWT = async (req = request, res = response, next) => {
   const token = req.header("x-token");
@@ -17,7 +17,7 @@ const validarJWT = async (req = request, res = response, next) => {
     const { id } = jwt.verify(token, process.env.SECRETORPRIVATEKEY);
 
     // leer el usuario que corresponde al id
-    const usuario = await getUserByUserNameOrIdAuth_BL("id", id);
+    const usuario = await getUser_BL("id", id);
 
     if (!usuario) {
       return res.status(401).json({
@@ -37,7 +37,7 @@ const validarJWT = async (req = request, res = response, next) => {
     req.usuario = usuario;
     next();
   } catch (error) {
-    // console.log(error);
+    console.log(error);
     return res.status(401).json({
       ok: false,
       msg: "Token no válido",

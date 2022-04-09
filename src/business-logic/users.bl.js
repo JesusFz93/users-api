@@ -56,8 +56,6 @@ const getUser_BL = async (searchCriteria, value) => {
       lastName: reqRow.last_name,
       email: reqRow.email,
       userName: reqRow.user_name,
-      password: reqRow.password,
-      phone: reqRow.phone,
       active: reqRow.active,
       image: reqRow.image,
     };

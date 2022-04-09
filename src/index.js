@@ -5,6 +5,7 @@ const dbConnection = require("./database/config");
 
 const rolesRoutes = require("./routes/roles.routes");
 const usersRoutes = require("./routes/users.routes");
+const authRoutes = require("./routes/auth.routes");
 
 const app = express();
 app.use(cors());
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use("/api/roles", rolesRoutes);
 app.use("/api/users", usersRoutes);
+app.use("/api/auth", authRoutes);
 
 dbConnection();
 

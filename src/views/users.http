@@ -1,5 +1,5 @@
 @api = http://localhost:4001/api/users
-@id = 623a08a8914486e4ff6288ad
+@id = 62519441b3e30c22e5bfc4d2
 
 ### get all Users
 {{api}}
@@ -12,12 +12,12 @@ POST {{api}}
 Content-Type: application/json
 
 {
-    "rolesId": [ "6239fae6fec6932563daeef8"],
-    "firstName": "Lizandro",
-    "lastName": "Tejeda",
-    "email": "ltejeda@gmail.com",
-    "userName": "LTEJEDA",
-    "password": "123456"
+    "rolesId": [ "625193dcb3e30c22e5bfc4cf"],
+    "firstName": "Jesus",
+    "lastName": "Fernandez",
+    "email": "jfernandez@correo.com",
+    "userName": "JFERNANDEZ",
+    "password": "909090"
 }
 
 ### update User
